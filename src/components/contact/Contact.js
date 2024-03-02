@@ -1,11 +1,10 @@
 import React from "react";
 import "./Contact.css";
 import { AiOutlineMail } from "react-icons/ai";
-import { AiFillFacebook } from "react-icons/ai";
 import { AiOutlineWhatsApp } from "react-icons/ai";
 import emailjs from "emailjs-com";
 import { useRef } from "react";
-
+import Link from "react-";
 const Contact = () => {
   const form = useRef();
 
@@ -31,19 +30,10 @@ const Contact = () => {
             <AiOutlineMail className="contact__option-icon" />
             <h4>Email</h4>
             <h5>prasastirri3@gmail.com</h5>
-            <a href="mailto:prasadtirri333@gmail.com" target="_blank">
+            <Link href="mailto:prasadtirri333@gmail.com" target="_blank">
               Send a message
-            </a>
+            </Link>
           </article>
-
-          {/* <article className="contact__option">
-            <AiFillFacebook className="contact__option-icon" />
-            <h4>Facebook</h4>
-            <h5>Prasad Darling</h5>
-            <a href="https://m.me/prasadprabas.prasadprabas/" target="_blank">
-              Send a message
-            </a>
-          </article> */}
 
           <article className="contact__option">
             <AiOutlineWhatsApp className="contact__option-icon" />
